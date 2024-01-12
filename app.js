@@ -11,7 +11,7 @@ let player = {
   x: boardWidth / 2 - playerWidth / 2,
   y: boardHeight - playerHeight - 5,
   width: playerWidth,
-  height: playerHeight,
+  height: playerHeightd,
   velocityX: playerVelocityX,
 };
 
@@ -116,7 +116,6 @@ function main() {
     createBlocks();
   }
 
-  //score
   context.font = "20px sans-serif";
   context.fillText(score, 10, 25);
 }
