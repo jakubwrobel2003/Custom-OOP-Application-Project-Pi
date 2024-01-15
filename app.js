@@ -30,7 +30,7 @@ let player = {
   x: boardWidth / 2 - playerWidth / 2,
   y: boardHeight - playerHeight - 5,
   width: playerWidth,
-  height: playerHeightd,
+  height: playerHeight,
   velocityX: playerVelocityX,
 };
 
