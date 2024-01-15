@@ -1,35 +1,3 @@
-let board;
-let boardWidth = 500;
-let boardHeight = 500;
-let context;
-
-let playerWidth = 80;
-let playerHeight = 10;
-let playerVelocityX = 10;
-
-let player = {
-  x: boardWidth / 2 - playerWidth / 2,
-  y: boardHeight - playerHeight - 5,
-  width: playerWidth,
-  height: playerHeightd,
-  velocityX: playerVelocityX,
-};
-
-//ball
-let ballWidth = 10;
-let ballHeight = 10;
-let ballVelocityX = 3;
-let ballVelocityY = 2;
-
-let ball = {
-  x: boardWidth / 2,
-  y: boardHeight / 2,
-  width: ballWidth,
-  height: ballHeight,
-  velocityX: ballVelocityX,
-  velocityY: ballVelocityY,
-};
-
 let blockArray = [];
 let blockWidth = 50;
 let blockHeight = 10;
@@ -43,6 +11,37 @@ let blockY = 45;
 
 let score = 0;
 let gameOver = false;
+
+let board;
+let boardWidth = 500;
+let boardHeight = 500;
+let context;
+
+let playerWidth = 80;
+let playerHeight = 10;
+let playerVelocityX = 10;
+
+let ballWidth = 10;
+let ballHeight = 10;
+let ballVelocityX = 3;
+let ballVelocityY = 2;
+
+let player = {
+  x: boardWidth / 2 - playerWidth / 2,
+  y: boardHeight - playerHeight - 5,
+  width: playerWidth,
+  height: playerHeightd,
+  velocityX: playerVelocityX,
+};
+
+let ball = {
+  x: boardWidth / 2,
+  y: boardHeight / 2,
+  width: ballWidth,
+  height: ballHeight,
+  velocityX: ballVelocityX,
+  velocityY: ballVelocityY,
+};
 
 window.onload = function () {
   board = document.getElementById("board");
